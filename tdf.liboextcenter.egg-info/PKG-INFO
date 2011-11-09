@@ -1,0 +1,27 @@
+Metadata-Version: 1.0
+Name: tdf.liboextcenter
+Version: 1.0
+Summary: An installale theme for LibreOffice extension center
+Home-page: http://libreoffice.org
+Author: Andreas Mantke
+Author-email: maand@gmx.de
+License: GPL
+Description: Introduction
+        ============
+        
+        An installable theme for the LibreOffice extension and template center.
+        
+        This product may contain traces of nuts.
+        
+        Changelog
+        =========
+        
+        1.0dev (unreleased)
+        -------------------
+        
+        - Initial release
+        
+Keywords: web zope plone theme
+Platform: UNKNOWN
+Classifier: Framework :: Plone
+Classifier: Programming Language :: Python

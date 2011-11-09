@@ -1,0 +1,63 @@
+<!--
+  'view' refers to the MyViewlet class in viewlets.py
+  If you do not need anything fancy where python code might help,
+  like just a viewlet that displays '<h1>Hello World</h1>',
+  then you can remove anything else from this page template, remove
+  viewlets.py and change the viewlet registration in configure.zcml:
+  replace
+     class=".viewlets.MyViewlet"
+  with 
+     template="viewlet.pt"
+  -->
+
+<div metal:define-macro="tdf_footer"
+     i18n:domain="tdf.liboextcenter"
+     class="row2">
+    <div class="cell width-full position-0">
+        <div id="tdffooterseperator">
+             <hr />
+        </div>
+        <div id="tdffooter">
+            
+            <p>
+
+                <span i18n:translate="description_legal_disclaimer" tal:omit-tag="">
+                     <span i18:name="legal_disclaimer" tal:omit-tag="">
+                        <a href="http://extensions.libreoffice.org/legal-disclaimers-and-limitations">Legal Disclaimers and Limitations</a> | 
+                     </span>
+                </span>      
+                <span i18n:translate="description_privacy_policy" tal:omit-tag="">
+                     <span i18:name="privacy_policy" tal:omit-tag="">
+                        <a href="http://extensions.libreoffice.org/privacy-policy">Privacy Policy</a> | 
+                     </span>
+                </span>
+                <span i18n:translate="description_impressum" tal:omit-tag="">
+                     <span i18:name="impressum" tal:omit-tag="">
+                        <a href="http://extensions.libreoffice.org/imprint">Impressum (Legal Info)</a> | 
+                     </span>
+                </span>
+                <span i18n:translate="description_license" tal:omit-tag="">
+                Copyright information: Unless otherwise specified, all text and images on this website are licensed under the
+                    <span i18n:name="license" tal:omit-tag="">
+                        <a href="http://creativecommons.org/licenses/by-sa/3.0/" i18n:translate="label_creative_commons_sa_licence">Creative Commons Attribution-Share Alike 3.0. License</a></span>.
+                </span>
+                <span i18n:translate="description_license_libo" tal:omit-tag="">
+                This does not include the source code of LibreOffice, which is licensed under the GNU Lesser General Public License (
+                <span i18n:name="license" tal:omit-tag="">
+                        <a href="http://www.libreoffice.org/download/license/" i18n:translate="label_gnu_lgpl_licence">LGPL v.3</a></span>
+               ).
+                
+                </span>
+            </p>
+            <p>
+               <span i18n:translate="description_trademark" tal:omit-tag="">
+                "LibreOffice" and "The Document Foundation" are registered trademarks in one or more countries. Their respective logos and icons are also subject to international copyright laws. Use thereof is explained in our
+                    <span i18n:name="trademark" tal:omit-tag="">
+                        <a href="http://wiki.documentfoundation.org/TradeMark_Policy" i18n:translate="label_trademark_policy">trademark policy</a></span>.
+                </span>
+            </p>
+        </div>
+
+    </div>
+</div>
+
